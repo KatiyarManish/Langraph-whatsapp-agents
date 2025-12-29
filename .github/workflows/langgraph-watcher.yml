@@ -27,6 +27,6 @@ jobs:
           TWILIO_SID: ${{ secrets.TWILIO_SID }}
           TWILIO_AUTH: ${{ secrets.TWILIO_AUTH }}
           TO_WHATSAPP: ${{ secrets.TO_WHATSAPP }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         run: |
           python main.py

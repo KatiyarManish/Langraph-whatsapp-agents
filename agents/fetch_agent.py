@@ -1,7 +1,7 @@
 import os
 import requests
 from bs4 import BeautifulSoup
-print("🔑 GITHUB_TOKEN loaded:", bool(os.getenv("GITHUB_TOKEN")))
+print("🔑 GITHUB_TOKEN loaded:", bool(os.getenv("MY_GITHUB_TOKEN")))
 def fetch_agent(state):
     items = []
 
@@ -24,7 +24,7 @@ def fetch_agent(state):
     # LangGraph GitHub Releases (AUTHENTICATED)
     headers = {
         "Accept": "application/vnd.github+json",
-        "Authorization": f"Bearer {os.getenv('GITHUB_TOKEN')}"
+        "Authorization": f"Bearer {os.getenv('MY_GITHUB_TOKEN')}"
     }
 
     resp = requests.get(
